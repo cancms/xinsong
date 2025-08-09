@@ -11,11 +11,9 @@ sections:
       # Choose which groups/teams of users to display.
       #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
       user_groups:
-          - Teacher
-          - Postdoctoral Researcher
-          - Master Students
-          - Research Assistants
-          - Visiting Students
+          - PI
+          - Postdoc
+          - PhD student
           
       sort_by: Params.sort_order
       sort_ascending: true
