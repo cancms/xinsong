@@ -1,0 +1,55 @@
+{{- define "main" -}}
+
+    {{/* Require Isotope */}}
+    {{ $.Page.Store.Set "has_isotope" true }}
+
+    {{/* partial "page_header.html" . */}}
+
+  <div class="container publication-list-wrap " id="publication-box">
+
+    <div class="article-title  mt-4 mb-4  ">
+      <h1 class="mb-0">{{ .Title | markdownify | emojify  }} </h1>
+    </div>
+
+    <div class="list_thesis pub-list-items">
+
+
+
+
+      {{ range $index, $item := .Pages.ByDate.Reverse }}
+
+      <div class="row pub-list-item">
+        <div class="col-12 col-md-8">
+
+          <div class="txt">
+            <h3><a href="{{ .Params.url_external }}" target="_blank"  >{{ .Title | markdownify | emojify  }} </a></h3>
+            <p><a href="{{ .Params.url_external }}" target="_blank"  >{{ .Params.authors_text  | markdownify | emojify  }} </a></p>
+            <p><a href="{{ .Params.url_external }}" target="_blank"  >{{ .Params.organization | markdownify | emojify  }}</a></p>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="cover_img">
+            <a href="{{ .Params.url_external }}" target="_blank"  ><img src="{{ .Params.pub_image | relLangURL }}" /></a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      {{ end }}
+
+
+
+
+    </div>
+
+
+
+
+
+    </div>
+  </div>
+
+{{- end -}}

@@ -1,0 +1,38 @@
+{{- define "main" -}}
+
+<div class="container">
+  <div class=" row ">
+    <div class="  article-title  mt-4 mb-4  ">
+      <h1 class="mb-0"> News </h1>
+    </div>
+  </div>
+
+
+  <div class="row news-single-wrap">
+
+
+      <h2 class="cat_name">{{ .Title }}</h2>
+      <div class="show_content_box">
+        <div id="vsb_content">
+          <div class="v_news_content">
+            {{ $resource := partial "blox-core/functions/get_featured_image.html" . }}
+            {{ if $resource }}
+            {{/* {{ $image := $resource.Fill "270x270 Center" }} */}}
+            {{ $image := $resource }}
+            <p style="text-align: center">
+              <img src="{{ $image.RelPermalink }}" class="img_vsb_content" style="max-width: 80%;">
+            </p>
+            {{ end }}
+
+            <p style="text-align: center;">{{ .Content }}</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+  </div>
+</div>
+
+{{- end -}}

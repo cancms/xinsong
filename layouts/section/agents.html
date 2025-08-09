@@ -1,0 +1,52 @@
+{{- define "main" -}}
+
+
+<div class="news-items-wrapper container">
+
+  <div class="article-title   ">
+    <h1 class="mb-0">{{ .Title | markdownify | emojify  }} </h1>
+  </div>
+
+  <div class="row news_items agents-items-primary">
+
+
+
+
+    {{ $paginator := .Paginate .Pages }}
+    {{ range $index, $item := $paginator.Pages }}
+
+    {{ $link := $item.RelPermalink }}
+
+    <div class="col-12 col-md-4 news_item  ">
+
+        {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+        {{ with $resource }}
+        {{ $image := .Resize "350x" }}
+        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+        <div class="">
+          <a href="{{$link}}"  >
+            <img src="{{ $image.RelPermalink }}"  class="cover_img"  >
+          </a>
+        </div>
+        {{end}}
+
+      <div class="txt">
+
+        <h3><a href="{{$link}}"  >{{ .Params.title }}</a></h3>
+
+        <div class="event-date "><a href="{{$link}}"  >{{  .Content  | markdownify | emojify }}</a> </div>
+      </div>
+    </div>
+
+    {{end}}
+
+
+
+  </div>
+
+
+  {{ partial "pagination" . }}
+
+</div>
+
+{{- end -}}

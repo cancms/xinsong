@@ -1,0 +1,189 @@
+
+{{/*
+jQuery轮播效果（Carousell）
+注意 prev nextl 两个button的href id 和 setction id要一致
+https://blog.csdn.net/chenmo2001/article/details/117674446
+*/}}
+{{ $heroBlock := .Params.heroBlock }}
+{{ $slider_hash_id := "hero_sliders" }}
+{{ $slider_args := dict "wcPage" $ "wcBlock" .Params.heroSlideBlock "wcIdentifier" $slider_hash_id }}
+<section id="section-hero" class="home-section wg-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 text-center text-md-left">
+        <h1 class="hero-title" >{{ $heroBlock.content.title }}</h1>
+        <div class="hero-lead" >
+          {{ $heroBlock.content.text | markdownify }}
+        </div>
+      </div>
+      <div class="col-12 col-md-6 hero-media carousel slide "
+           id="{{ $slider_hash_id }}">
+        {{ partial "blocks/slider.html" $slider_args }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+{{ $newsBlock := .Params.newsBlock }}
+{{ $news_args := dict "wcPage" $ "wcBlock" $newsBlock "wcIdentifier" "latest_news" }}
+
+<section id="section-research-news" class="home-section hs-research-news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 ">
+
+        <div class="home-video-wrapper home-cell-item">
+          <video src="{{ "video/home.mp4" | relLangURL }}" controls=""></video>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 ">
+
+        <div class="liimg home-cell-item">
+          <a href="info/1011/1068.htm" target="_blank" title="课题组合影">
+            <img src="{{ "image/h-people.jpg" | relLangURL }}" alt="课题组合影">
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 ">
+
+        <div class=" home-cell-item">
+          <div class="i_hd">
+            <h3>Research</h3>
+          </div>
+          <div class="i_bd">
+
+            <div class="item">
+              <div id="vsb_content_1171_u41">
+                <div id="vsb_content">
+                  <p>
+                    Industrial intelligence is becoming the cornerstone of modern manufacturing systems, enabling higher efficiency, resilience, and sustainability across complex production environments. However, the rapid integration of data-driven and AI-based technologies introduces new challenges in terms of safety, reliability, and system-level intelligence. In our Industrial Intelligence & Reliability Lab (IIR Lab), our long-term goal is to build a trustworthy industrial AI foundation via:
+                  </p>
+                  <p>
+                    1. developing data- and AI-driven monitoring frameworks for dynamic and complex industrial systems
+                    Modern industrial systems generate massive heterogeneous data from sensors, control loops ...
+                  </p>
+                </div>
+              </div>
+              <span id="vsb_content_1171_u4" name="vsb_content_1171_u4"></span>
+
+            </div>
+
+            <a class="see-all" href='{{ "research" | relLangURL }}' target="_blank">VIEW MORE <i class="fas fa-angle-right"></i> </a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 ">
+
+
+        <div class="home-news-block home-cell-item">
+          <div class="i_hd">
+            <h3>News</h3>
+          </div>
+          <div class="i_bd">
+            <div class="bd">
+              <div class="tempWrap"  >
+                <ul class="infoList"  >
+                  {{ partial "blocks/home-news-collection.html" $news_args }}
+
+                </ul>
+
+                {{ $archive_text := $newsBlock.content.archive.text }}
+
+                <div class="see-all">
+                  <a href='{{ "event" | relLangURL }}'>
+                    {{ $archive_text | emojify }}
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div>
+      <div class="i_hd">
+        <h3>Resources</h3>
+      </div>
+      <div class="row home-resource-section">
+
+        <div class="col-12 col-md-4 ">
+          <a class="a1" href="https://iscps.westlake.edu.cn/"    target="_blank">
+            <img src="{{ "image/lab-1.jpg" | relLangURL }}"  >
+            <p>High Performance Computing Center</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 ">
+          <a class="a2" href="https://iscms.westlake.edu.cn/"  target="_blank">
+            <img src="{{ "image/lab-2.png" | relLangURL }}"  >
+            <p>Cyber-Physical Integrated Experimental Platform</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 ">
+          <a class="a3" href="https://hpc.westlake.edu.cn/"    target="_blank">
+            <img src="{{ "image/lab-3.png" | relLangURL }}"  >
+            <p>Low-Code Industrial Intelligence Platform</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div>
+      <div class="i_hd">
+        <h3>Collaborator</h3>
+      </div>
+      <div class="row home-collaborator-section">
+
+
+        {{ range .Params.collaborators }}
+
+        <div class="col-6 col-md-2 ">
+          <img src="{{ .image | relLangURL }}"  >
+        </div>
+
+        {{ end }}
+
+        {{/*
+        <!--
+        <div class="col-12 col-md-4 ">
+          <img src="{{ "image/collaborator/dx1.png" | relLangURL }}"  >
+        </div>
+
+        <div class="col-12 col-md-4 ">
+          <img src="{{ "image/collaborator/dx2.png" | relLangURL }}"  >
+        </div>
+        -->
+        */}}
+
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+

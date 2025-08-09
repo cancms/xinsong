@@ -1,0 +1,39 @@
+{{- define "main" -}}
+
+<div class="container agents-single-wrap">
+  <div class=" row ">
+    <div class="  article-title  mt-4 mb-4  ">
+      <h1 class="mb-0"> Agents </h1>
+    </div>
+  </div>
+
+  <h2 class="cat_name">{{ .Title }}</h2>
+
+  <div class="row ">
+
+
+
+      <div class="show_content_box">
+        <div id="vsb_content">
+          <div class="v_agents_content">
+            {{ $resource := partial "blox-core/functions/get_featured_image.html" . }}
+            {{ if $resource }}
+            {{/* {{ $image := $resource.Fill "270x270 Center" }} */}}
+            {{ $image := $resource }}
+            <p style="text-align: center">
+              <img src="{{ $image.RelPermalink }}" class="img_vsb_content" style="max-width: 80%;">
+            </p>
+            {{ end }}
+
+            {{  .Content  | markdownify | emojify }}
+          </div>
+        </div>
+
+      </div>
+
+
+
+  </div>
+</div>
+
+{{- end -}}

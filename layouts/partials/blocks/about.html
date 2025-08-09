@@ -1,0 +1,55 @@
+{{/* Hugo Blox: About */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := "" }}
+{{ if .author }}
+  {{ $author = .author }}
+{{ else }}
+  {{ $author = $block.Params.author }}
+{{end}}
+
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your About widget and create an associated author page if one does not already exist. See https://docs.hugoblox.com/page-builder/#about " $person_page_path }}
+{{end}}
+{{ $person := $person_page.Params }}
+{{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
+{{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+
+<!-- About widget -->
+
+
+<div class="row">
+  <div class="col-12">
+    <div id="profile">
+
+
+        <h2 class="cat_name">{{- $person_page.Title -}}</h2>
+        <div class="show_content_box">
+          {{/*<div class="show_meta_info"><span>2022-07-13 10:58</span></div>*/}}
+
+          <div id="vsb_content">
+            <div class="v_news_content">
+              {{ if $avatar }}
+                {{/*{{ $avatar_image := $avatar.Fill "270x270 Center" }}*/}}
+                {{ $avatar_image := $avatar }}
+                <p style="text-align: center">
+                  <img src="{{ $avatar_image.RelPermalink }}" class="img_vsb_content">
+                </p>
+                {{ end }}
+
+              <p style="text-align: center;">{{- $person_page.Title -}}</p>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>

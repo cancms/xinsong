@@ -1,0 +1,103 @@
+{{- define "main" -}}
+
+
+    {{/* Initialise */}}
+    {{ $block := index .Params.sections 0 }}
+    {{ $show_social := $block.design.show_social | default false }}
+    {{ $show_interests := $block.design.show_interests | default true }}
+    {{ $show_organizations := $block.design.show_organizations | default false }}
+    {{ $show_role := $block.design.show_role | default true }}
+
+<div class="container people-list-wrap">
+
+    {{ with $block.content.title }}
+      <div class="article-title  mt-4 mb-4  ">
+        <h1 class="mb-0">{{ . | markdownify | emojify }}</h1>
+          {{ with $block.content.subtitle }}<p class="mt-1">{{ . | markdownify | emojify }}</p>{{ end }}
+      </div>
+    {{ end }}
+
+
+
+      {{ range $block.content.user_groups }}
+          {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
+
+          {{/* Sort */}}
+          {{ $sort_by := $block.content.sort_by | default "Params.sort_order" }}
+          {{ $sort_by = partial "blox-core/functions/get_sort_by_parameter" $sort_by }}
+          {{ $sort_ascending := $block.content.sort_ascending | default true }}
+          {{ $sort_order := cond $sort_ascending "asc" "desc" }}
+          {{ $query = sort $query $sort_by $sort_order }}
+
+
+          {{if $query | and (gt (len $block.content.user_groups) 1) }}
+            <div class="type_box list_box" style="flex:1;">
+              <div class="sub_cat_item" >
+                <div class="sc_hd">
+                  <h3 class="">{{ . | markdownify }}</h3>
+                </div>
+
+                <div class="sc_bd row">
+
+                      {{ range $query }}
+                          {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
+                          {{/* Get link to user's profile page. */}}
+                          {{ $link := "" }}
+                          {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
+                              {{ $link = .RelPermalink }}
+                          {{ end }}
+
+                        <div class="col-12 col-md-6 ">
+                            {{ $src := "" }}
+                            {{ if site.Params.features.avatar.gravatar }}
+                                {{ $src = printf "https://s.gravatar.com/avatar/%s?s=150" (md5 .Params.email) }}
+                            {{ else if $avatar }}
+                                {{ $avatar_image := $avatar.Fill "270x270 Center" }}
+                                {{ $src = $avatar_image.RelPermalink }}
+                            {{ end }}
+
+
+                          <div class=" member-card" >
+
+                          {{ if $src }}
+                            <div class=" member-img">
+                              <a  href="{{ $link }}" class="member-a-link"><img  src="{{ $src }}" class=" " alt="" /></a>
+                            </div>
+                          {{ end }}
+
+                            <div class="card-desc">
+                                <h5 class="card-title"><a  href="{{ $link }}" class="member-a-link">{{ .Title }}</a></h5>
+                                <div class="card-text">
+
+                                   {{/*content*/}}
+                                  {{/*{{ with .Content }}<div class="ml-content">{{ . | markdownify | emojify }}</div>{{ end }}*/}}
+                                  {{ if .Content }}<div class="ml-content"><a  href="{{ $link }}" class="member-a-link">{{ .Summary | markdownify | emojify }}</a></div>{{ end }}
+
+                                  <div class="ml-role"><a  href="{{ $link }}" class="member-a-link">{{ .Params.role | markdownify | emojify }}</a></div>
+                                  <div class="ml-university"><a  href="{{ $link }}" class="member-a-link">{{ .Params.university | markdownify | emojify }}</a></div>
+                                  <div class="ml-major"><a  href="{{ $link }}" class="member-a-link">{{ .Params.major | markdownify | emojify }}</a></div>
+                                </div>
+                            </div>
+                          </div>
+
+
+
+                        </div>
+                      {{ end }}
+
+
+                </div>
+
+              </div>
+            </div>
+          {{end}}
+
+
+      {{ end }}
+
+</div>
+
+
+
+
+{{- end -}}

@@ -1,0 +1,21 @@
+<!--Scroll To Top-->
+{{/*<a href="#" class="hc_scrollup"  ><i class="fa fa-chevron-up"></i></a>*/}}
+
+
+
+{{ if  .IsHome }}
+  <script>
+
+    jQuery(".home-news-block .i_bd").slide({
+      titCell: ".hd ul",
+      mainCell: ".bd ul",
+      autoPage: true,
+      effect: "top",
+      autoPlay: true,
+      vis: 8
+    });
+
+  </script>
+
+{{ end }}
+
