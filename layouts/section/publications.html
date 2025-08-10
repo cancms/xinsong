@@ -1,0 +1,61 @@
+{{- define "main" -}}
+
+    {{/* Require Isotope */}}
+    {{ $.Page.Store.Set "has_isotope" true }}
+
+    {{/* partial "page_header.html" . */}}
+
+
+{{ $publications := site.Data.publications.pubs }}
+
+  <div class="container publication-list-wrap " id="publication-box">
+
+    <div class="article-title  mt-4 mb-4  ">
+      <h1 class="mb-0">{{ .Title | markdownify | emojify  }} </h1>
+    </div>
+
+    <div class="list_thesis pub-list-items">
+
+
+
+
+      {{ range $index, $item := $publications }}
+
+      <div class="row pub-list-item">
+        <div class="col-12 {{with $item.pub_image}}col-md-8 {{end}}">
+
+          <div class="txt">
+            <h3>{{ $item.title | markdownify | emojify  }}</h3>
+            <p class="author-text">{{ $item.authors  | markdownify | emojify  }} </p>
+            <p>{{ $item.journal | markdownify | emojify  }}</p>
+          </div>
+
+        </div>
+
+
+        {{ with $item.pub_image }}
+        <div class="col-12 col-md-4">
+          <div class="cover_img">
+            <img src="{{ $item.pub_image | relURL }}" />
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+
+
+      {{ end }}
+
+
+
+
+    </div>
+
+
+
+
+
+    </div>
+  </div>
+
+{{- end -}}

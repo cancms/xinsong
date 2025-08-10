@@ -1,0 +1,39 @@
+
+pubs:
+
+  - authors: "Che, Yanan. , __Song, Xin*__. & Zhang, Li*"
+    year: 2025
+    title: "Engineering Microalgae-Based Biohybrid Robots for Biomedical Applications"
+    journal: "Cell Biomaterials. In Press"
+    pub_image:
+
+  - authors: "Wang, Qinglong. , Wang, Ben. , Chan, Kai Fung. , Ip, Bonaventure Yiu Ming. , Leung, Thomas Wai Hong. , __Song, Xin*__. , Zhang, Li*. & Xie, Jue*"
+    year: 2025
+    title: "Untethered Miniature Robots for Minimally Invasive Thrombus Treatment: From Laboratory Bench to Clinical Trials"
+    journal: "The Innovation (Cell Press). 100874"
+    pub_image:
+
+
+  - authors: "Rujie, Sun*. , __Song, Xin*__. , Zhou, Kun. , Zuo, Yuyang. , Wang, Richard. , Rifaie-Graham, Omar. , Peeler, David. , Xie, Ruoxiao. , Leng, Yixuan. , Geng, Hongya. , Brachi, Giulia. , Ma, Yun. , Liu, Yutong. , Barron, Lorna. & Stevens, Molly M"
+    year: 2023
+    title: "Assembly of fillable microrobotic systems by microfluidic loading with dip sealing"
+    journal: "Advanced Materials. 2207791"
+    pub_image:
+
+
+  - authors: "__Song, Xin__. , Sun, Rujie. , Wang, Richard. , Zhou, Kun. , Xie, Ruoxiao. , Georgiev, Dimitar. , Paraschiv, Andrei-Alexandru. , Zhao, Ruibo. & Stevens, Molly. M"
+    year: 2022
+    title: "Puffball-inspired microrobotic systems with robust payload, strong protection, and targeted locomotion for on-demand drug delivery"
+    journal: "Advanced Materials. 2204791"
+    pub_image:
+
+
+  - authors: "__Song, Xin__. , Ji, Haifeng. , Li, Yupei. , Xiong, Yuqin. , Qiu, Li. , Zhong, Rui. , Tian, Meng. , Kizhakkedathu, Jayachandran. N. , Su, Baihai. , Wei, Qiang. , Zhao, Weifeng. & Zhao, Changsheng"
+    year: 2021
+    title: "Transient blood thinning during extracorporeal blood purification via the inactivation of coagulation factors by hydrogel microspheres"
+    journal: "Nature Biomedical Engineering. 5. 1143 - 1156"
+    pub_image:
+
+
+
+
