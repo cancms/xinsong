@@ -3,8 +3,9 @@
 
 //$navbar-theme-bg-primary:  #17535d; //导航栏背景色
 $navbar-theme-bg-primary: unset; //导航栏背景色
-$navbar-theme-text-primary: #214986; //导航栏前景文字颜色
+$navbar-theme-text-primary: #bf165e; //导航栏前景文字颜色
 $navbar-theme-top-line-primary: #8dc015; //导航栏顶部横线颜色
+$text-normal: #2e2e2e;
 
 $bg-color: #f7f7f7;
 
@@ -17,8 +18,8 @@ body {
 
 }
 
-a {
-  color: #4a4a4a;
+h1  {
+color: $navbar-theme-text-primary;
 }
 
 h3.article-title a:hover, a:hover {
@@ -37,12 +38,16 @@ h3.article-title a:hover, a:hover {
 }
 
 #navbar-main .main-menu-item ul li .nav-link {
-  color: $navbar-theme-text-primary;
-  font-size: 1.3rem;
+  //color: $navbar-theme-text-primary;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.navbar-light .navbar-brand {
-  color: $navbar-theme-text-primary;
+.navbar-light {
+  font-family: inherit;
+  .navbar-brand {
+    //color: $navbar-theme-text-primary;
+  }
 }
 
 
@@ -162,6 +167,10 @@ h3.article-title a:hover, a:hover {
   .member-card {
     display: flex;
     margin: 1.3rem 0;
+
+    a {
+      color: $text-normal;
+    }
 
 
     .member-img {

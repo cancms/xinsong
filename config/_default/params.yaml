@@ -7,10 +7,10 @@
 
 appearance:
 #  theme_day: minimal
-  theme_day: iirl
+  theme_day: cityu
 #  theme_night:
   font: native
-  font_size: S  # S   M   L
+  font_size: M  # S   M   L
 
 # SEO
 
