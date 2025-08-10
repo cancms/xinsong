@@ -222,7 +222,19 @@ h3.article-title a:hover, a:hover {
   .list_thesis .pub-list-item  {
     border-top: 1px solid #ddd;
     padding: 3rem 0;
+
+    .txt p {
+      color: #666666;
+      font-size: 0.9rem;
+    }
+    .author-text {
+
+      padding: 1rem 0;
+
+    }
   }
+
+
 
 }
 
