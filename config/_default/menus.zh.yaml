@@ -5,24 +5,24 @@
 
 
 main:
-  - name: Home
+  - name: 首页
     url: ""
     weight: 10
 
-  - name: Research
+  - name: 研究
     url: research
     weight: 20
 
-  - name: People
+  - name: 成员
     url: people
     weight: 30
 
-  - name: Publications
+  - name: 论文
     url: publications
     weight: 40
 
 
-  - name: News
+  - name: 新闻
     url: news
     weight: 50
 
@@ -34,6 +34,6 @@ main:
 #    url: agents
 #    weight: 60
 
-  - name: Join us
+  - name: 招募
     url: joinus
     weight: 70
