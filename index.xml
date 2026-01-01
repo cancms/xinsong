@@ -1,11 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>XinSong Lab</title><link>https://cancms.github.io/xinsong/</link><atom:link href="https://cancms.github.io/xinsong/index.xml" rel="self" type="application/rss+xml"/><description>XinSong Lab</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate><image><url>https://cancms.github.io/xinsong/media/logo_hu_9c8a75bbc3c3e1a1.png</url><title>XinSong Lab</title><link>https://cancms.github.io/xinsong/</link></image><item><title>Research</title><link>https://cancms.github.io/xinsong/research/</link><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/research/</guid><description>&lt;h3 id="what-we-study">What we study&lt;/h3>
-&lt;p>Focuses on the development of advanced intelligent materials and systems for therapeutic, purification, and diagnostic applications in blood environments, including blood purification devices, micro/nano robotic systems, and blood-contacting biomaterials&lt;/p></description></item><item><title>Join us</title><link>https://cancms.github.io/xinsong/joinus/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/joinus/</guid><description>&lt;p>Open positions&lt;/p>
-&lt;p>&lt;strong>We look for group members with passion, talent, and self-motivation!&lt;/strong>&lt;/p>
-&lt;p>👉 &lt;strong>We will have future PhD quota for the 2026 admission. Stay tuned.&lt;/strong>&lt;/p>
-&lt;p>👉 &lt;strong>CityU Master students and Undergraduates who are interested in gaining research experience, and visiting scholars are always welcome to get in touch.&lt;/strong>&lt;/p>
-&lt;p>Applications for PhD and Postdoc positions&lt;/p>
-&lt;p>If you are interested in working with us as a PhD student or postdoc, please send me an email at &lt;a href="mailto:bingfu@cityu.edu.hk">bingfu@cityu.edu.hk&lt;/a>. State briefly why you are interested and attach a CV, stranscript, past research experience and why you are interested in the lab. Important: please have “Application PhD” or “Application Postdoc” in the subject line.&lt;/p>
-&lt;p>We also welcome competitive postdoc candidates. If you are interested in a postdoc position, please contact me. Postdoc fellowship opportunities in Hong Kong include: &lt;a href="https://www.ugc.edu.hk/eng/rgc/funding_opport/pdfs/" target="_blank" rel="noopener">RGC Postdoctoral Fellowship Scheme&lt;/a>, Jockey Club Global STEM Post-doctoral Fellowship&lt;/p></description></item><item><title/><link>https://cancms.github.io/xinsong/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/admin/config.yml</guid><description/></item><item><title>News</title><link>https://cancms.github.io/xinsong/news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/news/</guid><description>&lt;h3 id="jul-2025welcome">JUL 2025Welcome&lt;/h3>
-&lt;p>Dongxun to officially join the lab as a Postdoc!&lt;/p>
-&lt;h3 id="sep-2025">Sep 2025&lt;/h3>
-&lt;p>Welcome Junliang to officially join the lab as a PhD student!&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Song Research Group</title><link>https://cancms.github.io/xinsong/</link><atom:link href="https://cancms.github.io/xinsong/index.xml" rel="self" type="application/rss+xml"/><description>Song Research Group</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate><image><url>https://cancms.github.io/xinsong/media/icon_hu_5a58e261b09e037b.png</url><title>Song Research Group</title><link>https://cancms.github.io/xinsong/</link></image><item><title>Research</title><link>https://cancms.github.io/xinsong/research/</link><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/research/</guid><description>&lt;h3 id="blood-interfacing-biomaterials"&gt;Blood-interfacing Biomaterials&lt;/h3&gt;
+&lt;p&gt;We study how blood interacts with engineered materials under physiological flow and develop interfaces that remain stable, selective, and non-thrombogenic. Our work centers on bio-inspired and anti-coagulant surface designs that reduce non-specific protein adsorption and suppress clot formation during blood circulation. This research supports the development of safer dialysis systems, ECMO circuits, and material platforms for selective blood toxin removal.&lt;/p&gt;
+&lt;h3 id="precision-therapeutic-platforms"&gt;Precision Therapeutic Platforms&lt;/h3&gt;
+&lt;p&gt;We design therapeutic platforms that operate across length scales, connecting molecular-level therapeutics with device-level control. By combining external physical fields, including magnetic and acoustic actuation, with intelligent delivery carriers, we guide therapeutic agents through physiological barriers and localize intervention at target sites. Such platform-level integration allows image-guided and spatiotemporally controlled therapy, particularly for complex and deep-seated diseases.&lt;/p&gt;
+&lt;h3 id="biorobotics"&gt;Biorobotics&lt;/h3&gt;
+&lt;p&gt;We develop robotic systems inspired by biological organisms and, in some cases, directly powered or guided by living cells. Our research includes bio-inspired and bio-derived microrobots, as well as biohybrid robots that merge synthetic structures with cellular functions. These systems are designed to function in complex biological fluids and environments, supporting minimally invasive intervention, targeted drug delivery, and in vivo sensing.&lt;/p&gt;</description></item><item><title>Join us</title><link>https://cancms.github.io/xinsong/joinus/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/joinus/</guid><description>&lt;h3 id="join-us"&gt;JOIN US&lt;/h3&gt;
+&lt;p&gt;The Song Research Group is actively recruiting highly motivated &lt;strong&gt;Postdoctoral Fellows, Ph.D. students, Research Assistants, Master&amp;rsquo;s students, and Undergraduate students&lt;/strong&gt;. We welcome candidates with diverse academic backgrounds, including but not limited to &lt;strong&gt;Biomedical Engineering, Materials Science, Robotics, Mechanical Engineering&lt;/strong&gt;, and related fields.&lt;/p&gt;
+&lt;p&gt;If you are passionate about research and eager to make an impact, please send your application to &lt;strong&gt;Dr. Xin Song&lt;/strong&gt; via email at &lt;strong&gt;&lt;a href="mailto:xinsong@cityu.edu.hk"&gt;xinsong@cityu.edu.hk&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Application Requirements&lt;/strong&gt;: Please use the following format for your email subject line: &lt;strong&gt;[PhD/Postdoc/RA Inquiry] - [Your Name] - [Your Current Institution]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please attach the following documents:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;CV&lt;/strong&gt; (including a full list of publications).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Representative papers&lt;/strong&gt; (combined into a single PDF).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Summary Slides&lt;/strong&gt; (a brief presentation introducing your past research work).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Teaching</title><link>https://cancms.github.io/xinsong/teaching/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/teaching/</guid><description>&lt;h3 id="teaching"&gt;Teaching&lt;/h3&gt;
+&lt;p&gt;I teach undergraduate and postgraduate courses in biomedical engineering, biomaterials, and robotics, with an emphasis on translating fundamental principles into practical healthcare technologies.&lt;/p&gt;
+&lt;h3 id="courses-taught"&gt;Courses Taught&lt;/h3&gt;
+&lt;h4 id="20252026--semester-b"&gt;2025–2026 · Semester B&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Biorobotics (BME6115 / BME8129) &lt;br&gt; Postgraduate course, City University of Hong Kong&lt;/li&gt;
+&lt;li&gt;Biorobotics (BME6115) &lt;br&gt; Postgraduate course, City University of Hong Kong (Dongguan)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="20252026--semester-a"&gt;2025–2026 · Semester A&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Biomaterials for Healthcare and Biomedical Applications (BME6136 / BME8136)&lt;/p&gt;
+&lt;p&gt;Postgraduate course, City University of Hong Kong&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tissue Engineering (BME2104)&lt;/p&gt;
+&lt;p&gt;Undergraduate course, City University of Hong Kong&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="20242025"&gt;2024–2025&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Engineering Design and Applications (MAEG3920)&lt;/p&gt;
+&lt;p&gt;Undergraduate course, The Chinese University of Hong Kong&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://cancms.github.io/xinsong/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/admin/config.yml</guid><description/></item><item><title>News</title><link>https://cancms.github.io/xinsong/news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cancms.github.io/xinsong/news/</guid><description>&lt;h3 id="jul-2025welcome"&gt;JUL 2025Welcome&lt;/h3&gt;
+&lt;p&gt;Dongxun to officially join the lab as a Postdoc!&lt;/p&gt;
+&lt;h3 id="sep-2025"&gt;Sep 2025&lt;/h3&gt;
+&lt;p&gt;Welcome Junliang to officially join the lab as a PhD student!&lt;/p&gt;</description></item></channel></rss>
