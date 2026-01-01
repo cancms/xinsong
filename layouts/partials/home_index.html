@@ -7,7 +7,7 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 {{ $heroBlock := .Params.heroBlock }}
 {{ $slider_hash_id := "hero_sliders" }}
 {{ $slider_args := dict "wcPage" $ "wcBlock" .Params.heroSlideBlock "wcIdentifier" $slider_hash_id }}
-<section id="section-hero" class="home-section wg-hero">
+<section id="section-hero" class="home-section wg-hero" >
   <div class="container">
     <div class="hero-media carousel slide " data-ride="carousel"
          id="{{ $slider_hash_id }}">
@@ -21,6 +21,50 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
     <h1>{{ .Params.intro_title | markdownify }}</h1>
     <div class=" intro-text " >
         {{ .Content }}
+    </div>
+  </div>
+</section>
+
+
+<section id="section-home-research" class="home-section wg-lab-intro">
+  <div class="container lab-intro">
+    <h1>{{.Params.research_topic_title | markdownify }}</h1>
+    <div style="margin-top: 1rem;"><img src="{{ "images/home/research.png" | relURL }}" /></div>
+    <div class="row mt-3 ml-2" >
+      <div class="col-12 col-md-4">{{ .Params.research_topic1 | markdownify}}</div>
+      <div class="col-12 col-md-4">{{ .Params.research_topic2 | markdownify}}</div>
+      <div class="col-12 col-md-4">{{ .Params.research_topic3 | markdownify}}</div>
+    </div>
+  </div>
+</section>
+
+
+<section id="section-home-selected-pubs" class="home-section wg-lab-intro mt-5">
+  <div class="container lab-intro">
+    <h1>{{.Params.selected_publications_title | markdownify }}</h1>
+    <div class="pl-5 mt-2 card-simple view-card" >
+      {{ .Params.selected_publications | markdownify }}
+    </div>
+  </div>
+</section>
+
+
+
+<section id="section-home-join-us" class="home-section wg-lab-intro mt-5">
+  <div class="container lab-intro">
+    <h1>{{.Params.join_us_title | markdownify }}</h1>
+    <div class="pt-3 pb-3 " >
+      {{ .Params.join_us_content | markdownify }}
+    </div>
+    <div class="row " >
+      <div class="col-12 col-md-7"><img style="height: 377px; width: 100%;" src="{{ "images/home/school.jpg" | relURL }}" /></div>
+      <div class="col-12 col-md-5"><img src="{{ "images/home/map.png" | relURL }}" /></div>
+    </div>
+    <div class="row pt-3" >
+      <div class="col-12 col-md-8">
+        {{ .Params.join_us_contact_content | markdownify }}
+      </div>
+      <div class="col-12 col-md-4"><img src="{{ "images/home/city-u.png" | relURL }}" /></div>
     </div>
   </div>
 </section>

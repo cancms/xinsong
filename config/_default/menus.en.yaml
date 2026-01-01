@@ -22,6 +22,10 @@ main:
     weight: 40
 
 
+  - name: Teaching
+    url: teaching
+    weight: 45
+
   - name: News
     url: news
     weight: 50

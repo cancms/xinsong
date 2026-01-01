@@ -10,7 +10,7 @@ heroSlideBlock:
   block: slider
   design:
     # Slide height is automatic unless you force a specific height (e.g. '400px')
-    slide_height: '400px'
+    slide_height: '500px'
     is_fullscreen: false
     # Automatically transition through slides?
     loop: false
@@ -25,33 +25,33 @@ heroSlideBlock:
         align: center
         background:
           image:
-            filename: group_slides/s1.jpg
+            filename: group_slides/s1.png
             filters:
               brightness: 1
           position: right
-          color: '#666'
+          color: '#fff'
       # slide 2        
-      - title:
-        content:
-        align: left
-        background:
-          image:
-            filename: group_slides/s2.jpg
-            filters:
-              brightness: 1
-          position: right
-          color: '#666'
-      # slide 3       
-      - title:
-        content:
-        align: left
-        background:
-          image:
-            filename: group_slides/s3.jpg
-            filters:
-              brightness: 1
-          position: right
-          color: '#666'
+#      - title:
+#        content:
+#        align: left
+#        background:
+#          image:
+#            filename: group_slides/s2.jpg
+#            filters:
+#              brightness: 1
+#          position: right
+#          color: '#666'
+#      # slide 3       
+#      - title:
+#        content:
+#        align: left
+#        background:
+#          image:
+#            filename: group_slides/s3.jpg
+#            filters:
+#              brightness: 1
+#          position: right
+#          color: '#666'
 
 
 

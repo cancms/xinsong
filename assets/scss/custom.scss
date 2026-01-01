@@ -3,7 +3,7 @@
 
 //$navbar-theme-bg-primary:  #17535d; //导航栏背景色
 $navbar-theme-bg-primary: unset; //导航栏背景色
-$navbar-theme-text-primary: #bf165e; //导航栏前景文字颜色
+$navbar-theme-text-primary: #002060 ;  // #bf165e; //导航栏前景文字颜色
 $navbar-theme-top-line-primary: #8dc015; //导航栏顶部横线颜色
 $text-normal: #2e2e2e;
 
@@ -64,6 +64,10 @@ h3.article-title a:hover, a:hover {
   background: $bg-color;
 }
 
+//.home-section:nth-of-type(even) {
+//  background: #f7f7f7;
+//}
+
 
 .wg-lab-intro {
   padding: 1rem 0;
@@ -105,6 +109,9 @@ h3.article-title a:hover, a:hover {
 }
 
 #section-hero {
+
+  // background-color: #ffffff;
+
   .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 1rem;
     height: 1rem;
@@ -147,6 +154,16 @@ h3.article-title a:hover, a:hover {
   margin-top: 1em;
 }
 
+
+#section-home-selected-pubs {
+  ul, li {
+    list-style: disc;
+  }
+  li {
+    padding-top: 1rem;
+  }
+}
+
 .article-single-wrap {
   .article-title {
     padding: 2rem 0 3rem 0;
@@ -166,7 +183,7 @@ h3.article-title a:hover, a:hover {
 .people-list-wrap  {
   .member-card {
     display: flex;
-    margin: 1.3rem 0;
+    margin: 1.3rem 0.5rem;
 
     a {
       color: $text-normal;
@@ -177,13 +194,15 @@ h3.article-title a:hover, a:hover {
       a {
         width: 180px;
         display: block;
-        padding-right: 1rem;
       }
 
 
       img {
         max-width: unset;
         width: 150px;
+        height: 150px;
+        object-fit: contain;
+        background: #fff;
       }
     }
 
@@ -235,11 +254,16 @@ h3.article-title a:hover, a:hover {
     .txt p {
       color: #666666;
       font-size: 0.9rem;
+      a:hover {
+        color: #fff;
+      }
     }
     .author-text {
-
       padding: 1rem 0;
-
+    }
+    .journal-text {
+      padding: 1rem 0;
+      font-weight: bold;
     }
   }
 

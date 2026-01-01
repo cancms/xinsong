@@ -3,13 +3,13 @@ name = "Iirl"
 
 [light]
   # Primary
-  primary = "#bf165e"
+  primary = "#002060"
 
   # Menu
   menu_primary = "#fff"
-  menu_text = "#6b203e"
-  menu_text_active = "#bf165e"
-  menu_title = "#bf165e"
+  menu_text = "#7c0378"
+  menu_text_active = "#002060"
+  menu_title = "#002060"
 
   # Home sections
   home_section_odd = "rgb(255, 255, 255)"

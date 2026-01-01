@@ -2,7 +2,7 @@
   
 title: Publications
 
-
+pub_desc: Journal Articles (*corresponding author, ^equal contribution)
 
 design:
   # Choose a view for the listings:

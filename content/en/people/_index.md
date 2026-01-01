@@ -12,8 +12,9 @@ sections:
       #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
       user_groups:
           - PI
-          - Postdoc
-          - PhD student
+          - Postdoctoral Fellows
+          - PhD students
+          - Master Student
           
       sort_by: Params.sort_order
       sort_ascending: true

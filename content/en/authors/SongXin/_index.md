@@ -9,26 +9,24 @@ user_groups:
 
 
 # Role/position
-role: 
+role: Assistant Professor
 
-university: 
+university: Department of Biomedical Engineering, <br> City University of Hong Kong
   
 major: 
 
 # email 
-email:
+email: xinsong@cityu.edu.hk
 
 # phone 
-telephone:
+telephone: +852 34429562
 
+
+office: Yeung-P7709
 
 sort_order: 10
 
 ---
 
 
-
-Dr. Xin Song received his bachelor's and master's degrees from Sichuan University in Prof. Changsheng Zhao's group. 
-<!--more--> 
-He then obtained his Ph.D. at Imperial College London under the supervision of Prof. Molly Stevens DBE FRS FREng. Before joining CityU, he was a Research Assistant Professor in the Department of Mechanical and Automation Engineering at The Chinese University of Hong Kong, working with Prof. Li Zhang. Since 2025, he has been an Assistant Professor in the Department of Biomedical Engineering at City University of Hong Kong. 
- 
+Dr. Xin Song is an Assistant Professor at City University of Hong Kong since Jan 2025. He received his bachelor's and master's degrees from Sichuan University in [Prof. Changsheng Zhao's group](https://www.x-mol.com/groups/zhao_changsheng). He then obtained his Ph.D. at Imperial College London in [Prof. Molly Stevens’s group](https://www.stevensgroup.org/professor-stevens). Before joining CityU, he was a Research Assistant Professor at The Chinese University of Hong Kong, working in [Prof. Li Zhang’s group](http://microbot.mae.cuhk.edu.hk/).

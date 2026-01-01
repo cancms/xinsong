@@ -10,17 +10,19 @@ date: 2022-10-24
 ---
 
 
-Open positions
+### JOIN US
 
 
-**We look for group members with passion, talent, and self-motivation!**
+The Song Research Group is actively recruiting highly motivated **Postdoctoral Fellows, Ph.D. students, Research Assistants, Master's students, and Undergraduate students**. We welcome candidates with diverse academic backgrounds, including but not limited to **Biomedical Engineering, Materials Science, Robotics, Mechanical Engineering**, and related fields.
 
-👉 **We will have future PhD quota for the 2026 admission. Stay tuned.**
+If you are passionate about research and eager to make an impact, please send your application to **Dr. Xin Song** via email at **xinsong@cityu.edu.hk**.
 
-👉 **CityU Master students and Undergraduates who are interested in gaining research experience, and visiting scholars are always welcome to get in touch.**
+**Application Requirements**: Please use the following format for your email subject line: **[PhD/Postdoc/RA Inquiry] - [Your Name] - [Your Current Institution]**
 
-Applications for PhD and Postdoc positions
-
-If you are interested in working with us as a PhD student or postdoc, please send me an email at bingfu@cityu.edu.hk. State briefly why you are interested and attach a CV, stranscript, past research experience and why you are interested in the lab. Important: please have “Application PhD” or “Application Postdoc” in the subject line.
-
-We also welcome competitive postdoc candidates. If you are interested in a postdoc position, please contact me. Postdoc fellowship opportunities in Hong Kong include: [RGC Postdoctoral Fellowship Scheme](https://www.ugc.edu.hk/eng/rgc/funding_opport/pdfs/), Jockey Club Global STEM Post-doctoral Fellowship
+Please attach the following documents:
+  
+1.	**CV** (including a full list of publications).
+              
+2.	**Representative papers** (combined into a single PDF).
+              
+3.	**Research Summary Slides** (a brief presentation introducing your past research work).

@@ -37,7 +37,7 @@
                   <h3 class="">{{ . | markdownify }}</h3>
                 </div>
 
-                <div class="sc_bd row">
+                <div class="  row">
 
                       {{ range $query }}
                           {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
@@ -52,31 +52,38 @@
                             {{ if site.Params.features.avatar.gravatar }}
                                 {{ $src = printf "https://s.gravatar.com/avatar/%s?s=150" (md5 .Params.email) }}
                             {{ else if $avatar }}
-                                {{ $avatar_image := $avatar.Fill "270x270 Center" }}
-                                {{ $src = $avatar_image.RelPermalink }}
+                                {{/*{{ $avatar_image := $avatar.Fill "270x270 Center" }}
+                                {{ $src = $avatar_image.RelPermalink }}*/}}
+                                {{ $src = $avatar.RelPermalink }}
                             {{ end }}
 
 
-                          <div class=" member-card" >
+                          <div class=" member-card row" >
 
-                          {{ if $src }}
-                            <div class=" member-img">
-                              <a  href="{{ $link }}" class="member-a-link"><img  src="{{ $src }}" class=" " alt="" /></a>
+                            <div class="col-6 col-md-4">
+                              {{ if $src }}
+                                <div class=" member-img">
+                                  <a  href="{{ $link }}" class="member-a-link"><img  src="{{ $src }}" class=" " alt="" /></a>
+                                </div>
+                              {{ end }}
                             </div>
-                          {{ end }}
 
-                            <div class="card-desc">
+                            <div class="col-6  col-md-8">
+                                <div class="card-desc">
                                 <h5 class="card-title"><a  href="{{ $link }}" class="member-a-link">{{ .Title }}</a></h5>
                                 <div class="card-text">
 
                                    {{/*content*/}}
                                   {{/*{{ with .Content }}<div class="ml-content">{{ . | markdownify | emojify }}</div>{{ end }}*/}}
-                                  {{ if .Content }}<div class="ml-content"><a  href="{{ $link }}" class="member-a-link">{{ .Summary | markdownify | emojify }}</a></div>{{ end }}
+                                  {{/*{{ if .Content }}<div class="ml-content"><a  href="{{ $link }}" class="member-a-link">{{ .Summary | markdownify | emojify }}</a></div>{{ end }}*/}}
 
-                                  <div class="ml-role"><a  href="{{ $link }}" class="member-a-link">{{ .Params.role | markdownify | emojify }}</a></div>
-                                  <div class="ml-university"><a  href="{{ $link }}" class="member-a-link">{{ .Params.university | markdownify | emojify }}</a></div>
-                                  <div class="ml-major"><a  href="{{ $link }}" class="member-a-link">{{ .Params.major | markdownify | emojify }}</a></div>
+                                  {{ with .Params.role }}<div class="ml-role"><a  href="{{ $link }}" class="member-a-link">{{ . | markdownify | emojify }}</a></div>{{ end }}
+                                  {{ with .Params.university }}<div class="ml-university"><a  href="{{ $link }}" class="member-a-link">{{ . | markdownify | emojify }}</a></div>{{ end }}
+                                   {{ with .Params.email }}<div class="ml-university"><a  href="{{ $link }}" class="member-a-link">Email: {{ . | markdownify | emojify }}</a></div>{{ end }}
+                                  {{ with .Params.telephone }}<div class="ml-university"><a  href="{{ $link }}" class="member-a-link">Tel: {{ . | markdownify | emojify }}</a></div>{{ end }}
+                                  {{ with .Params.office }}<div class="ml-university"><a  href="{{ $link }}" class="member-a-link">Office: {{ . | markdownify | emojify }}</a></div>{{ end }}
                                 </div>
+                            </div>
                             </div>
                           </div>
 
