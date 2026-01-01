@@ -223,6 +223,17 @@ h3.article-title a:hover, a:hover {
 
 
 .publication-list-wrap {
+
+  .image-icons {
+    display: flex;
+    .image-icon {
+      margin: 0 1rem 2rem 0  ;
+    }
+    img {
+      margin-right: 1rem;
+    }
+  }
+
   .article-title {
     padding: 2rem 0 3rem 0;
   }

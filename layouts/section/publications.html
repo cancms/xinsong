@@ -13,6 +13,18 @@
     <div class="article-title  mt-4 mb-4  ">
       <h1 class="mb-0">{{ .Title | markdownify | emojify  }} </h1>
     </div>
+
+    <div class="image-icons">
+      {{range .Params.external_links}}
+        <div class="image-icon">
+          <a href="{{.url}}" target="_blank">
+            <img src="{{.image | relURL}}" alt="{{.name | markdownify }}" title="{{.name | markdownify }}"     />
+          </a>
+        </div>
+      {{end}}
+
+    </div>
+
     <div><h4>{{ .Params.pub_desc | markdownify | emojify  }}</h4></div>
 
     <div class="list_thesis pub-list-items">
